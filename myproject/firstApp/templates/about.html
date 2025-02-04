@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" class="background-lime">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Info</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&amp;family=Roboto:ital,wght@0,100..900;1,100..900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{% static "./css/styles.css" %}" />
+  </head>
+  <body class="background-lime" style="height: 2000px">
+    <header class="topic" style="height: auto; position: sticky; top: 0">
+      <button
+        onclick="location.href='http://127.0.0.1:8000/'"
+        type="button"
+        class="button-topic"
+      >
+        <h2 class="heading roboto-topic">Главная</h2>
+      </button>
+      <button type="button" class="button-topic">
+        <h2 class="heading roboto-topic">Форум</h2>
+      </button>
+      <button type="button" id="profileBtn" class="button-topic">
+        <h2 class="heading roboto-topic">Профиль</h2>
+      </button>
+      <div class="container" style="position: sticky; top: 0">
+        <div id="profileMenu" class="hide-profile-menu profileMenu">
+          <h2>Какой-то текст</h2>
+          <button id="closeProfile">Закрыть окно профиля</button>
+        </div>
+      </div>
+    </header>
+
+    <script src="../static/scripts/scripts.js"></script>
+  </body>
+</html>

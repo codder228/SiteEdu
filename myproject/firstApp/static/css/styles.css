@@ -1,0 +1,83 @@
+* {
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+
+.background-lime {
+  background-color: #5cdb94;
+}
+
+.topic {
+  display: flex;
+  width: 100%;
+  border-width: 0px;
+}
+
+.button-topic {
+  margin-top: 20px;
+  border-width: 0px;
+  width: 33%;
+  background-color: #5cdb94;
+  color: #05396b;
+  cursor: pointer;
+  height: 50px;
+}
+
+.roboto-topic {
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-size: 60px;
+  font-style: normal;
+  font-variation-settings: "wdth" 400;
+}
+
+.heading {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+.profileMenu {
+  position: absolute;
+  top: 1080; /* Прилегание к верхнему краю экрана */
+  right: 1920; /* Прилегание к правому краю экрана */
+  width: 640px; /* 1/5 ширины экрана */
+  height: 1080px; /* 1/3 высоты экрана */
+  background-color: #658674; /* Непрозрачный фон */
+  color: white;
+  padding: 20px;
+  border-radius: 10px; /* Убираем закругления */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  transform: translateY(-20px); /* Начальная позиция для анимации */
+  opacity: 0; /* Начальная непрозрачность */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Плавные переходы */
+}
+.ERprofileMenu {
+  position: absolute;
+  top: 0; /* Прилегание к верхнему краю экрана */
+  right: -100%; /*Начальная позиция вне экрана */
+  width: 20%; /* 1/5 ширины экрана */
+  height: 100%; /* Высота на весь экран */
+  background-color: #333; /* Непрозрачный фон */
+  color: white;
+
+  border-radius: 0; /* Убираем закругления */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  transition: right 0.8s ease, opacity 0.8s ease; /* Плавные переходы */
+  opacity: 0; /* Начальная непрозрачность */
+}
+
+.active {
+  transform: translateY(0); /* Конечная позиция для анимации */
+  opacity: 1; /* Полная непрозрачность */
+}
+
+.hide-profile-menu {
+  display: none;
+}
+
+.hide-profileBtn {
+  display: none;
+}

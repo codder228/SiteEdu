@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Главная -Rate Your Games</title>
+    <link rel="stylesheet" href="{% static "./css/styles.css" %}" />
+  </head>
+  <body>
+    <div class="topic">
+      <button type="button" class="button-topic">First</button>
+      <button type="button" class="button-topic">Second</button>
+      <button
+        type="button"
+        class="button-topic"
+        onclick="location.href='http://127.0.0.1:8000/about/'"
+      >
+        About
+      </button>
+    </div>
+  </body>
+</html>
